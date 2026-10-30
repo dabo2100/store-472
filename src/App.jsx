@@ -10,6 +10,7 @@ export default function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/checout" element={<h1>Checkout Details</h1>} />
           <Route path="/product" element={<h1>Product Details</h1>} />
           <Route path="/cart" element={<h1>Cart Page</h1>} />
           <Route path="/login" element={<h1>Login Page</h1>} />
