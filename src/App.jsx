@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Header from "./components/Header";
+import OrderPage from "./pages/OrderPage";
 
 export default function App() {
   return (
@@ -14,7 +15,7 @@ export default function App() {
           <Route path="/cart" element={<h1>Cart Page</h1>} />
           <Route path="/login" element={<h1>Login Page</h1>} />
           <Route path="/signup" element={<h1>Sign-Up Page</h1>} />
-          <Route path="/orders" element={<h1>Orders Page</h1>} />
+          <Route path="/orders" element={<OrderPage/>} />
           <Route path="*" element={<h1>Page Not Found | 404 Error</h1>} />
         </Routes>
       </BrowserRouter>
