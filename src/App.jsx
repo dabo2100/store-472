@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Cart from "./pages/Cart";
 
 export default function App() {
   return (
@@ -14,7 +15,7 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/checout" element={<h1>Checkout Details</h1>} />
             <Route path="/product" element={<h1>Product Details</h1>} />
-            <Route path="/cart" element={<h1>Cart Page</h1>} />
+            <Route path="/cart" element={<Cart/>} />
             <Route path="/login" element={<h1>Login Page</h1>} />
             <Route path="/signup" element={<h1>Sign-Up Page</h1>} />
             <Route path="/orders" element={<h1>Orders Page</h1>} />
