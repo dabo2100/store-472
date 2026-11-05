@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Search, User, ShoppingCart, Menu, X } from "lucide-react";
+import { LuSearch as Search, LuUser as User, LuShoppingCart as ShoppingCart, LuMenu as Menu, LuX as X } from "react-icons/lu";
 
 const navLinks = [
   { label: "Home", to: "/" },

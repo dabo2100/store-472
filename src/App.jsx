@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomePage from "./pages/HomePage";
+import ProductPage from "./pages/Productpage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -11,9 +11,9 @@ export default function App() {
         <Header />
         <main className="flex-1">
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/checout" element={<h1>Checkout Details</h1>} />
-            <Route path="/product" element={<h1>Product Details</h1>} />
+            <Route path="/home" element={<h1>HomePage</h1>} />
+            <Route path="/cart" element={<h1>Cart Page</h1>} />
+            <Route path="/product" element={<ProductPage />} />
             <Route path="/cart" element={<h1>Cart Page</h1>} />
             <Route path="/login" element={<h1>Login Page</h1>} />
             <Route path="/signup" element={<h1>Sign-Up Page</h1>} />
@@ -26,15 +26,3 @@ export default function App() {
     </div>
   );
 }
-
-// Home -> shop
-// Product Details
-// Cart
-// About
-// Signup
-// Login page
-// Orders
-// profile
-// admin - dashboard
-// admin - products
-//
