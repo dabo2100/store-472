@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ProductCard from "../components/ProductCard";
 
 export default function HomePage() {
   const [product, setProducts] = useState([
@@ -26,7 +27,6 @@ export default function HomePage() {
       imgSrc:
         "https://incredideals.co/cdn/shop/files/IMG-18071641_m_jpeg_1.png?v=1758021301&width=1800",
     },
-
   ]);
   return (
     <div className="w-full flex justify-center">
@@ -35,25 +35,9 @@ export default function HomePage() {
           Our Products
         </h1>
         <div className="grid grid-cols-3 gap-3 py-3">
-          {product.map((el) => {
+          {product.map((el, index) => {
             return (
-              <div className="card bg-gray-300  shadow-sm">
-                <figure className="w-full py-4 bg-white border">
-                  <img
-                    src={el.imgSrc}
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">{el.name}</h2>
-                  <p>
-                    Price : {el.price} USD
-                  </p>
-                  <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
+              <ProductCard key={index} bgColor="bg-gray-400" theData={el} />
             );
           })}
         </div>
