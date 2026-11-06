@@ -9,6 +9,10 @@ export default function Header() {
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/cart">Cart</Link>
+          <Link to="/login">Login</Link>
+          <Link to="/signup">Sign Up</Link>
+        
+        
         </nav>
       </div>
     </div>
