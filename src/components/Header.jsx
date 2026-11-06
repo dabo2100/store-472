@@ -21,13 +21,13 @@ export default function Header({ cartCount = 2 }) {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-sky-100 bg-white">
       <div className="mx-auto flex h-16 max-w-7xl items-center gap-4 px-4 sm:px-6 lg:px-8">
-        {/* Logo */}
+      
         <Link to="/" className="shrink-0 text-xl tracking-tight">
           <span className="font-extrabold text-gray-900">ELECTRO</span>
           <span className="font-semibold text-[#7C5CFC]">CORE</span>
         </Link>
 
-        {/* Desktop nav */}
+        
         <nav className="ml-2 hidden items-center gap-6 md:flex">
           {navLinks.map((link) => (
             <NavLink key={link.label} to={link.to} className={linkClass} end>
@@ -36,7 +36,7 @@ export default function Header({ cartCount = 2 }) {
           ))}
         </nav>
 
-        {/* Desktop search */}
+       
         <div className="mx-auto hidden max-w-md flex-1 lg:block">
           <label className="relative block">
             <Search
@@ -51,12 +51,11 @@ export default function Header({ cartCount = 2 }) {
           </label>
         </div>
 
-        {/* Spacer on mid screens where search is hidden */}
         <div className="flex-1 lg:hidden" />
 
-        {/* Actions */}
+     
         <div className="flex items-center gap-2 sm:gap-3">
-          {/* Mobile search toggle */}
+         
           <button
             type="button"
             aria-label="Toggle search"
@@ -87,7 +86,7 @@ export default function Header({ cartCount = 2 }) {
             )}
           </Link>
 
-          {/* Mobile menu toggle */}
+        
           <button
             type="button"
             aria-label={menuOpen ? "Close menu" : "Open menu"}
@@ -104,7 +103,7 @@ export default function Header({ cartCount = 2 }) {
         </div>
       </div>
 
-      {/* Mobile / tablet search bar */}
+      
       {searchOpen && (
         <div className="border-t border-sky-100 px-4 py-3 lg:hidden">
           <label className="relative block">
@@ -122,7 +121,7 @@ export default function Header({ cartCount = 2 }) {
         </div>
       )}
 
-      {/* Mobile nav drawer */}
+      
       {menuOpen && (
         <nav className="border-t border-sky-100 bg-white px-4 py-3 md:hidden">
           <ul className="flex flex-col gap-1">
